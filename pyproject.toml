@@ -1,0 +1,18 @@
+[project]
+name = "zerozerocode"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "inline-snapshot>=0.29.4",
+    "logfire[httpx]>=4.3.3",
+    "pydantic>=2.11.7",
+    "pydantic-ai>=0.7.3",
+    "pydantic-evals[logfire]>=0.7.3",
+    "python-dotenv[cli]>=1.1.1",
+    "requests>=2.32.4",
+]
+
+[tool.inline-snapshot]
+format-command="ruff format --stdin-filename {filename}"
